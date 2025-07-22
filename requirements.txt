@@ -1,0 +1,9 @@
+requests
+python-dotenv 
+google-generativeai 
+colorama 
+slither-analyzer 
+tenacity  
+pytest 
+web3 
+reportlab
