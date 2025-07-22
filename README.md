@@ -36,19 +36,6 @@ Gemini AI: aistudio.google.com
 
 # 📦 Installation
 
-Clone the Repository:
-
-git clone https://github.com/yourusername/smart-contract-scanner.git
-
-cd smart-contract-scanner
-
-
-Set Up a Virtual Environment:
-
-python -m venv venv
-
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
 
 Install Dependencies:
 
@@ -58,13 +45,13 @@ pip install -r requirements.txt
 
 Configure API Keys:Create a .env file in the project root:
 
-ETHERSCAN_API_KEY=your_etherscan_api_key
+ETHERSCAN_API_KEY= your_etherscan_api_key
 
-BSCSCAN_API_KEY=your_bscscan_api_key
+BSCSCAN_API_KEY= your_bscscan_api_key
 
-POLYGONSCAN_API_KEY=your_polygonscan_api_key
+POLYGONSCAN_API_KEY= your_polygonscan_api_key
 
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY= your_gemini_api_key
 
 
 # 🚀 Usage
@@ -72,6 +59,7 @@ GEMINI_API_KEY=your_gemini_api_key
 Run smartscan.py with a contract address and optional chain (eth, bsc, or polygon). Use --overwrite to replace existing reports.
 
 Syntax
+
 python smartscan.py <contract_address> [--chain <chain>] [--overwrite]
 
 Examples
@@ -102,25 +90,6 @@ Contract source: contracts/<chain>_<address>.sol
 
 Audit reports: reports/<chain>_<address>.md and reports/<chain>_<address>.json
 
-
-
-# 📂 Project Structure
-smart-contract-scanner/
-├── contracts/              # Fetched contract source or bytecode
-├── reports/                # Audit reports (.md and .json)
-├── .env                    # API keys
-├── contract_fetcher.py     # Fetches contract data
-├── gemini_analyzer.py      # Analyzes contracts with Gemini AI and Slither
-├── smartscan.py            # Main script
-├── requirements.txt        # Dependencies
-└── README.md               # Documentation
-
-# 🔍 Troubleshooting
-
-API Key Errors: Verify keys in .env are correct.
-Network Issues: The script retries API calls 3 times. Check your connection or API limits.
-Slither Errors: Ensure solc matches the contract’s Solidity version (solc-select install <version>).
-Unverified Contracts: Limited bytecode analysis is performed if source code is missing.
 
 # Example 
 If you want to see the reported examples, go to the example folder.
