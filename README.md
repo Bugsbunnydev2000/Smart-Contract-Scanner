@@ -4,6 +4,10 @@ A Python-based tool for auditing smart contracts on Ethereum, Binance Smart Chai
 Smart Contract Security Scanner
 SmartScan is a powerful Python tool for auditing smart contracts on Ethereum, Binance Smart Chain (BSC), and Polygon. It fetches contract source code or bytecode from blockchain explorers, analyzes it for vulnerabilities using Gemini AI and Slither, and generates detailed security reports.
 
+**Note.**
+
+**The website is currently not working, so run it via CLI and terminal to see the results.**
+
 
 # ✨ Features
 
