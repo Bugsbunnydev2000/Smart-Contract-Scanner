@@ -6,7 +6,7 @@ SmartScan is a powerful Python tool for auditing smart contracts on Ethereum, Bi
 
 **Note.**
 
-**The website is currently not working, so run it via CLI and terminal to see the results.**
+# The website is currently not working, so run it via CLI and terminal to see the results. ✨✨
 
 
 # ✨ Features
